@@ -4,6 +4,7 @@
     <list default="true" id="f387f0d7-9dea-4964-bb07-14fc8b8637c1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础数据结构/线性表/链表.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础数据结构/线性表/链表.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,20 +23,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="链表.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="链表.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/基础数据结构/线性表/链表.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -56,8 +48,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/基础数据结构/线性表/顺序表.py" />
-        <option value="$PROJECT_DIR$/基础数据结构/线性表/链表.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/基础数据结构/线性表/链表.py" />
       </list>
     </option>
   </component>
@@ -72,9 +64,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="24" />
-    <option name="y" value="50" />
+    <option name="y" value="78" />
     <option name="width" value="1342" />
-    <option name="height" value="619" />
+    <option name="height" value="591" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -92,12 +84,6 @@
               <item name="CodeTraining" type="b2602c69:ProjectViewProjectNode" />
               <item name="CodeTraining" type="462c0819:PsiDirectoryNode" />
               <item name="基础数据结构" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeTraining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeTraining" type="462c0819:PsiDirectoryNode" />
-              <item name="基础数据结构" type="462c0819:PsiDirectoryNode" />
-              <item name="线性表" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,17 +187,17 @@
     <entry file="file://$PROJECT_DIR$/基础数据结构/线性表/顺序表.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/基础数据结构/线性表/链表.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        <state relative-caret-position="131">
+          <caret line="106" column="4" lean-forward="true" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/基础数据结构/线性表/链表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="104" column="6" lean-forward="true" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

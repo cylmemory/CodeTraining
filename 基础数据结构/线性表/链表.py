@@ -17,9 +17,9 @@ class Node:
         self.next = nextNode
 
 
-# temp = Node(93)
-# temp.set_data(66)
-# print(temp.data)
+temp = Node(93)
+temp.set_data(66)
+print(temp.data)
 
 
 # list define and operating
