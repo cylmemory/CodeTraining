@@ -37,3 +37,25 @@ print(s.peek())  # 'cat'
 print(s.pop())  # 'cat'
 print(s.size())  # '1'
 print(s.peek())  # 3
+
+
+# 利用栈来反转字符串
+def reverse(mystr):
+    output_str = ''
+    mystack = Stack()
+
+    if(len(mystr) == 0):
+        return ''
+    for s in mystr:
+        mystack.push(s)
+
+    while not mystack.is_empty():
+        output_str += mystack.pop()
+
+    return output_str
+
+
+print(reverse(''))
+print(reverse('123456789'))
+print(reverse('abc'))
+print(reverse('12321'))
