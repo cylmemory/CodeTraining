@@ -40,6 +40,7 @@ print(s.peek())  # 3
 
 
 # 利用栈来反转字符串
+# 思路：先取每个字符压栈，再弹栈
 def reverse(mystr):
     output_str = ''
     mystack = Stack()
@@ -59,3 +60,77 @@ print(reverse(''))
 print(reverse('123456789'))
 print(reverse('abc'))
 print(reverse('12321'))
+
+
+# 判断括号匹配
+# 思路：先检索是否为左边方向的括号，然后压栈，当检索为右边方向的括号，再把栈顶元素(最近位置)弹栈来进行匹配
+def match(lStr, rStr):
+    leftStrings = '{[('
+    rightstrings = '}])'
+
+    return leftStrings.index(lStr) == rightstrings.index(rStr)
+
+
+def checksymbolbalance(symbolstring):
+    s = Stack()
+    index = 0
+    flag = True
+    while index < len(symbolstring) and flag:
+        if symbolstring[index] in '{[(':
+            s.push(symbolstring[index])
+        else:
+            if s.is_empty():
+                return False
+            else:
+                lstr = s.pop()
+                if not match(lstr, symbolstring[index]):
+                    flag = False
+        index += 1
+    if flag and s.is_empty():
+        return True
+    else:
+        return False
+
+
+print(checksymbolbalance('{([]((){}))}'))
+
+
+# 十进制数转化成各个进制
+# base--几进制
+def convertto(decnumber, base):
+    s = Stack()
+    digis = '0123456789ABCDEF'
+    output = ''
+
+    while decnumber > 0:
+        result = decnumber % base
+        s.push(result)
+
+        decnumber = decnumber // base
+    while not s.is_empty():
+        output += digis[s.pop()]
+
+    return output
+
+
+print(convertto(59, 8))
+
+
+# 十进制转换为二进制
+# 思路：先把这个值除于2取模，压栈，再弹栈
+def DecToBin(decnumber):
+    s = Stack()
+    output = ''
+
+    while decnumber > 0:
+        result = decnumber % 2
+        s.push(result)
+
+        decnumber = decnumber // 2
+    while not s.is_empty():
+        output += str(s.pop())
+
+    return output
+
+
+print(DecToBin(42))
