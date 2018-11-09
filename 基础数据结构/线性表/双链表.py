@@ -32,6 +32,10 @@ class LList:
         tempnode = Node(elem)
         tempnode.set_next(self.head)
         self.head = tempnode
+        if tempnode.next is not None:
+            self._rear = tempnode.next
+        else:
+            self._rear = tempnode
 
     def remove(self, elem):
         current = self.head
@@ -95,8 +99,8 @@ class DLList(LList):
 
     # 删除首部节点
     def pop(self):
-        if self.head is NOne:
-            print('this is a empty double list')
+        if self.head is None:
+            print('this is an empty double list')
             return
         e = self.head.data
         self.head = self.head.next
@@ -106,8 +110,8 @@ class DLList(LList):
 
     # 删除尾部节点
     def pop_last(self):
-        if self.head is NOne:
-            print('this is a empty double list')
+        if self.head is None:
+            print('this is an empty double list')
             return
         e = self._rear.data
         self._rear = self._rear.prev

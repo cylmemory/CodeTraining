@@ -45,7 +45,7 @@ class CycleList:
     # 前端弹出
     def delete_start(self):
         if self._rear is None:
-            print('this is a empty cycle list')
+            print('this is an empty cycle list')
             return
         p = self._rear.next
 
@@ -58,7 +58,7 @@ class CycleList:
     # 后端弹出
     def delete_rear(self):
         if self._rear is None:
-            print('this is a empty cycle list')
+            print('this is an empty cycle list')
             return
         p = self._rear.next
 
