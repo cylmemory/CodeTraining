@@ -14,9 +14,10 @@
 # return [0, 1].
 
 # 题目解析：
+# 1.找个两个值的之和等于某个值，需要遍历数组
+# 2.使用反向思维，先把target减去第一个元素差放在hash表，再判断剩下的元素是否与hash表中的值相等
 
-
-# 核心思想：当为"D"，把最大数据插入数组，为"I"，把最小数据插入数组
+# 核心思想：使用hash表，使用键值对进行存储数组值(key)和下标值(value)
 # 时间复杂度为o(n)
 
 class Solution:
@@ -35,6 +36,3 @@ class Solution:
                 map[target - nums[i]] = i
             else:
                 return [map[nums[i]], i]
-
-s = Solution()
-print(s.twoSum([1, 3, 0, 4, 9], 5))
