@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-# 题目: 942. Two Sum
+# 题目: 1. Two Sum
 # 题目链接：https://leetcode.com/problems/two-sum/
 # 题目大意：
 # 给出一个整型数组，找出两个数字之和为给定target值对应的下标index，如下：
