@@ -36,3 +36,8 @@ class Solution:
                 map[target - nums[i]] = i
             else:
                 return [map[nums[i]], i]
+
+s = Solution()
+print(s.twoSum([1, 3, 0, 4, 9], 5))
+
+
