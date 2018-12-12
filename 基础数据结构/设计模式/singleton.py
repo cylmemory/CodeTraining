@@ -6,7 +6,7 @@ class Singleton(object):
 
 
 class Mysingleton(Singleton):
-    att = 1
+    attr = 1
 
 
 a = Mysingleton()
@@ -18,6 +18,7 @@ print(id(b))
 print(a == b)
 
 print(a.__dict__)
+print(b.__dict__)
 
 
 class Singleton1(object):
