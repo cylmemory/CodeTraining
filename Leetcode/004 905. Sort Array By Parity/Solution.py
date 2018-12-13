@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 # Sort Array By Parity
 # 题目大意：
 # 给出一个非负整数的数组A，返回一个由A的所有偶数元素组成的数组，后跟A的所有奇数元素
@@ -55,3 +57,5 @@ class Solution:
         :rtype: List[int]
         """
         return sorted(A, key=lambda x: x % 2)
+    # 时间复杂度：O(NlogN) N代表len(A)
+    # 空间复杂度：O(N)
