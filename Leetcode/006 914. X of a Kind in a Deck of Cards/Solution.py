@@ -45,6 +45,7 @@ class Solution:
         """
         from functools import reduce
         import collections
+
         def gcd(a, b):
             while b:
                 a, b = b, a % b
