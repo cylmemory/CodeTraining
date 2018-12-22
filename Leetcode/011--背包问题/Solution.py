@@ -1,8 +1,4 @@
 def canPartition(nums):
-    """
-    :type nums: List[int]
-    :rtype: bool
-    """
     half_sum = sum(nums)
     if half_sum % 2 == 1:
         return False
