@@ -1,6 +1,6 @@
 # 题目描述：
 # 将一个字符串中的空格替换成 "%20"
-# 要求是时间复杂度 O(N)，空间复杂度 O(1)
+# 要求是时间复杂度 O(N)
 # example:
 # Input:
 # "A B"
@@ -39,6 +39,32 @@ class Solution:
         return "".join(new_str)
 
 
-s = ''
-test = Solution()
-print(test.replaceBlank(s))
+# s = ''
+# test = Solution()
+# print(test.replaceBlank(s))
+
+# 方法2：使用append进行遍历替换
+# list每个字符append方法时间复杂度为o(1)，除了扩容时间损耗，时间复杂度为O(N)，空间复杂度为O(N)
+class Solution1:
+    def replaceBlank(self, init_str):
+        if not isinstance(init_str, str) or len(init_str) <= 0 or init_str == None:
+            return ""
+
+        string_list = list(init_str)
+        new_str = []
+        for i in string_list:
+            if i == ' ':
+                new_str.append('%')
+                new_str.append('2')
+                new_str.append('0')
+            else:
+                new_str.append(i)
+        return "".join(new_str)
+
+
+s1 = 'we are happy'
+test1 = Solution1()
+print(test1.replaceBlank(s1))
+
+# 方法3：直接使用replace方法，由于字符串s是不可变类型，所以s.replace会生成新的string，原来的s还是会带空格
+
