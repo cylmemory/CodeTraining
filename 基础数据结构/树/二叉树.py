@@ -87,7 +87,7 @@ def preorderTraversal(tree):
 
 # 循环遍历：中序
 # 中序：左中右，当cur不为None，cur压栈，反之，出栈一个节点，打印栈节点当值，整个循环在stack和cur都为None都时候结束
-def inorderTraveral(tree):
+def inorderTraversal(tree):
     ordered_list = []
     stack = []
     cur = tree
@@ -102,6 +102,22 @@ def inorderTraveral(tree):
     return ordered_list
 
 
+# 循环遍历：后序
+# 后序：左右中，反过来就中右左，跟前序遍历(中左右)类似，只是把左右子树的顺序调换而已,输出的时候，倒转顺序。
+def postorderTraversal(tree):
+    ordered_list = []
+    stack = []
+    cur = tree
+    while cur or stack:
+        if cur:
+            ordered_list.append(cur.getrootVal())
+            stack.append(cur.getLeftChild())  # 左子节点入栈
+            cur = cur.getRightChild()  # 调换为当前节点指向右子节点
+        else:
+            cur = stack.pop()
+    return ordered_list[::-1]
+
+
 t = BinaryTree(10)
 t.insertLeft(6)
 t.insertRight(14)
@@ -114,3 +130,7 @@ t.getRightChild().insertRight(16)
 # print(pre_Order(t)) # [10, 6, 4, 8, 14, 12, 16]
 # print(in_Order(t))  # [4, 6, 8, 10, 12, 14, 16]
 # print(post_Order(t))# [4, 8, 6, 12, 16, 14, 10]
+
+# print(preorderTraversal(t))  # [10, 6, 4, 8, 14, 12, 16]
+# print(inorderTraveral(t))    # [4, 6, 8, 10, 12, 14, 16]
+# print(postorderTraversal(t)) # [4, 8, 6, 12, 16, 14, 10]
