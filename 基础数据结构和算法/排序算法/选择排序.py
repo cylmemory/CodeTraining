@@ -7,7 +7,7 @@ def selection_sort(alist):
         return
     for i in range(len(alist)-1):
         min_index = i
-        for j in range(i+1, len(alist)):
+        for j in range(i+1, len(alist)):  # 嵌套循环
             if alist[min_index] > alist[j]:
                 min_index = j
         alist[i], alist[min_index] = alist[min_index], alist[i]
