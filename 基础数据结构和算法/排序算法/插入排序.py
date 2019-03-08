@@ -8,7 +8,7 @@ def insert_sort(alist):
     for i in range(1, len(alist)):
         x = alist[i]
         j = i
-        while j > 0 and alist[j-1] > x:  # 从后面到前面依次比较
+        while j > 0 and alist[j-1] > x:  # [4], 1, 9, 3, 11, 5, -1]从后面到前面依次比较
             alist[j] = alist[j-1]
             j -= 1
         alist[j] = x
