@@ -5,8 +5,8 @@
 def merge_sort(slist):
     if len(slist) > 1:
         mid = len(slist)//2
-        llist = slist[:mid]  # 二路归并左边
-        rlist = slist[mid:]  # 二路归并右边
+        llist = slist[:mid]  # 二路归并(递归)左边
+        rlist = slist[mid:]  # 二路归并(递归)右边
 
         merge_sort(llist)
         merge_sort(rlist)

@@ -1,5 +1,6 @@
 # coding: utf-8
-
+# 空间复杂度o(logn):
+# 时间复杂度o(nlogn),最坏的情况是n^2
 def quickSort(slist):
     if slist == [] or slist is None:
         return
